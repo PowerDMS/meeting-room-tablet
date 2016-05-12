@@ -43,7 +43,7 @@
     <color name="ReserveBackground">#8bc34a</color>
     <color name="ReserveLine">#aed581</color>
     <color name="TimeBarTickColor">#3333</color>
-    <color name="ButtonTextNormal">#333</color>
+    <color name="ButtonTextNormal">#ffffff</color>
     <color name="ButtonTextActive">#ffffff</color>
     <color name="ButtonTextDisabled">#999</color>
     <color name="TextInfoColor">#666</color>
