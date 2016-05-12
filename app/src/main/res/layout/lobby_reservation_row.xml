@@ -36,7 +36,8 @@
                     android:layout_height="wrap_content"
                     android:text="Room name XXX"
                     android:textColor="@color/TextColor"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold"
+                    android:textSize="20dp"></TextView>
 
                 <TextView
                     android:id="@+id/roomInfoLabel"
