@@ -48,7 +48,8 @@
         android:layout_toRightOf="@+id/startMinus"
         android:gravity="center"
         android:text="12:00"
-        android:textAppearance="@style/TimeSpanTimeStyle">
+        android:textAppearance="@style/TimeSpanTimeStyle"
+        android:textColor="@color/CalendarTextColor">
     </TextView>
 
     <ImageButton
@@ -93,7 +94,8 @@
         android:layout_toRightOf="@+id/endMinus"
         android:gravity="center"
         android:text="13:00"
-        android:textAppearance="@style/TimeSpanTimeStyle">
+        android:textAppearance="@style/TimeSpanTimeStyle"
+        android:textColor="@color/CalendarTextColor">
     </TextView>
 
     <TextView
