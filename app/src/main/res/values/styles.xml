@@ -13,7 +13,7 @@
     <color name="StatusFreeColor">#529200</color>
     <color name="StatusReservedColor">#b24c4c</color>
     <color name="Transparent">#0000</color>
-    <color name="CalendarMarkerReservedColor">#0066CC</color>
+    <color name="CalendarMarkerReservedColor">#0066cc</color>
     <color name="CalendarMarkerFreeColor">#0000</color>
 
     <style name="Theme.Transparent" parent="android:Theme">
@@ -39,9 +39,9 @@
         <item name="android:textSize">64sp</item>
     </style>
 
-    <color name="FutuLightGreen">#cbdeb2</color>
-    <color name="ReserveBackground">#6698c655</color>
-    <color name="ReserveLine">#a4cb80</color>
+    <color name="FutuLightGreen">#64b5f6</color>
+    <color name="ReserveBackground">#8bc34a</color>
+    <color name="ReserveLine">#aed581</color>
     <color name="TimeBarTickColor">#3333</color>
     <color name="ButtonTextNormal">#333</color>
     <color name="ButtonTextActive">#333</color>
