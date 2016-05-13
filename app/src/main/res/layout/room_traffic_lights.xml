@@ -19,7 +19,8 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        android:id="@+id/relativeLayout2">
 
         <TextView
             android:id="@+id/roomStatus"
@@ -54,17 +55,6 @@
             android:textSize="30sp"
             android:gravity="center_horizontal"
             android:textIsSelectable="false"/>
-
-        <Button
-            android:id="@+id/endNow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            android:textIsSelectable="false"
-            android:layout_alignTop="@+id/bookNow"
-            android:layout_centerHorizontal="true"
-            android:text="@string/end_now" />
 
         <Button
             android:id="@+id/bookNow"
@@ -117,5 +107,18 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:textAllCaps="true"
-        android:textIsSelectable="false"/>
+        android:textIsSelectable="false"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/endNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:text="@string/end_now"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
