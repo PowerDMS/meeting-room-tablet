@@ -80,10 +80,6 @@ public class RoomTrafficLights extends RelativeLayout {
         this.bookNowListener = l;
     }
 
-        public void setEndNowListener(View.OnClickListener 1) {
-        this.endNowListener = 1;
-    }
-
     public void update(Room room) {
         updateConnected();
 
