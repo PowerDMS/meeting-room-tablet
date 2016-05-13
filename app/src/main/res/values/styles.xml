@@ -6,14 +6,14 @@
         <item name="android:textSize">18pt</item>
     </style>
 
-    <color name="CalendarDisabledColor">#4000</color>
-    <color name="CalendarBorderColor">#ccc</color>
+    <color name="CalendarDisabledColor">#44000000</color>
+    <color name="CalendarBorderColor">#cccccc</color>
     <color name="CalendarTextColor">#000</color>
-    <color name="CalendarResTextColor">#fff</color>
+    <color name="CalendarResTextColor">#ffffff</color>
     <color name="StatusFreeColor">#529200</color>
     <color name="StatusReservedColor">#b24c4c</color>
-    <color name="Transparent">#0000</color>
-    <color name="CalendarMarkerReservedColor">#0066CC</color>
+    <color name="Transparent">#00000000</color>
+    <color name="CalendarMarkerReservedColor">#0066cc</color>
     <color name="CalendarMarkerFreeColor">#0000</color>
 
     <style name="Theme.Transparent" parent="android:Theme">
@@ -61,4 +61,9 @@
     <color name="TrafficLightGreenButtonPressed">#03a021</color>
     <color name="TrafficLightYellowButtonPressedText">#e4ec8c</color>
     <color name="TrafficLightGreenButtonPressedText">#98dd6f</color>
+    2A2A2A
+    <color name="PowerDMSBlue">#0f70b4</color>
+    <color name="PowerDMSBlack">#2a2a2a</color>
+
+    <color name="NavBarBackground">#ffffff</color>
 </resources>

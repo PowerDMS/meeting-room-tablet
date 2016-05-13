@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:weightSum="1"
+    android:background="@color/NavBarBackground">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/powerdms_logo"
+        android:src="@drawable/powerdms_logo"
+        android:contentDescription="@string/powerdms_company_logo_as_found_on_the_company_website_on_5_12_2016"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/calendar_button" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_button"
+        android:src="@drawable/home_black"
+        android:contentDescription="@string/homeButton"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="30dp"
+        android:adjustViewBounds="false"
+        android:background="@color/Transparent"
+        android:clickable="true"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_button"
+        android:src="@drawable/list_black"
+        android:focusable="true"
+        android:layout_alignTop="@+id/home_button"
+        android:layout_toLeftOf="@+id/home_button"
+        android:layout_toStartOf="@+id/home_button"
+        android:layout_marginRight="30dp"
+        android:contentDescription="@string/listButton"
+        android:background="@color/Transparent"
+        android:padding="5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendar_button"
+        android:src="@drawable/calendar_black"
+        android:layout_alignTop="@+id/list_button"
+        android:layout_toLeftOf="@+id/list_button"
+        android:layout_toStartOf="@+id/list_button"
+        android:layout_marginRight="30dp"
+        android:contentDescription="@string/calendarButton"
+        android:adjustViewBounds="false"
+        android:padding="5dp"
+        android:background="@color/Transparent" />
+
+</RelativeLayout>
