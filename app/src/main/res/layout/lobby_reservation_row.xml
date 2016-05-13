@@ -37,8 +37,9 @@
                     android:text="Room name XXX"
                     android:background="@color/RoomNameBackGround"
                     android:textColor="@color/TextColor"
-                    android:textStyle="normal"
+                    android:textStyle="bold|normal"
                     android:textSize="20dp"></TextView>
+
 
                 <TextView
                     android:id="@+id/roomInfoLabel"

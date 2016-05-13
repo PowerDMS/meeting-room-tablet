@@ -25,7 +25,7 @@
         <item name="android:backgroundDimEnabled">true</item>
     </style>
 
-    <color name="TextColor">#ffffff</color>
+    <color name="TextColor">#0091ea</color>
     <color name="TimeSpanTextColor">#529200</color>
 
     <style name="TimeSpanTimeStyle">
@@ -61,5 +61,5 @@
     <color name="TrafficLightGreenButtonPressed">#03a021</color>
     <color name="TrafficLightYellowButtonPressedText">#e4ec8c</color>
     <color name="TrafficLightGreenButtonPressedText">#98dd6f</color>
-    <color name="RoomNameBackGround">#008a99</color>
+    <color name="RoomNameBackGround">#ffffff</color>
 </resources>
