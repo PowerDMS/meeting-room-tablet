@@ -15,6 +15,17 @@
         android:src="@drawable/minus_icon">
     </ImageButton>
 
+    <com.futurice.android.reservator.view.TimeBarView
+        android:id="@+id/timeBarView"
+        android:layout_width="10dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/startMinus"
+        android:layout_alignRight="@+id/endPlus"
+        android:layout_below="@+id/startMinus"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+    </com.futurice.android.reservator.view.TimeBarView>
+
     <TextView
         android:id="@+id/startInfoLabel"
         android:layout_width="wrap_content"
