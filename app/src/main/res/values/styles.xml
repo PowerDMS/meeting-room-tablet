@@ -61,5 +61,5 @@
     <color name="TrafficLightGreenButtonPressed">#03a021</color>
     <color name="TrafficLightYellowButtonPressedText">#e4ec8c</color>
     <color name="TrafficLightGreenButtonPressedText">#98dd6f</color>
-    <color name="RoomNameBackGround">#ffffff</color>
+
 </resources>
