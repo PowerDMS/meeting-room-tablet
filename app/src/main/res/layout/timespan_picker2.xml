@@ -23,7 +23,8 @@
         android:layout_alignRight="@+id/endPlus"
         android:layout_below="@+id/startMinus"
         android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="5dp"
+        android:visibility="invisible">
     </com.futurice.android.reservator.view.TimeBarView>
 
     <TextView
