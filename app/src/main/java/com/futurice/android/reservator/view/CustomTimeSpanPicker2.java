@@ -16,6 +16,7 @@ import android.view.View.OnClickListener;
 public class CustomTimeSpanPicker2 extends FrameLayout implements OnClickListener {
     View startMinus, startPlus, endMinus, endPlus;
     TextView startLabel, endLabel;
+    TimeBarView timeBar;
     DateTime currentDay;
 
     int currentTimeStart;
@@ -56,6 +57,7 @@ public class CustomTimeSpanPicker2 extends FrameLayout implements OnClickListene
 
         startLabel = (TextView) findViewById(R.id.startTimeLabel);
         endLabel = (TextView) findViewById(R.id.endTimeLabel);
+        timeBar = (TimeBarView) findViewById(R.id.timeBarView);
 
         minimumDuration = 30;
         timeStep = 30;
@@ -77,6 +79,36 @@ public class CustomTimeSpanPicker2 extends FrameLayout implements OnClickListene
         return (m / timeStep) * timeStep;
     }
 
+    @Override
+    public void onClick(View v) {
+        //start doing the animations
+        timeBar.enableAnimation();
+
+        if (v == startMinus) {
+            int start = quantize(currentTimeStart - timeStep);
+
+            currentTimeStart = Math.max(start, minimumTime);
+
+            // refreshing texts
+            refreshLabels();
+        } else if (v == startPlus) {
+            int start = quantize(currentTimeStart + timeStep);
+
+            currentTimeStart = Math.min(start, currentTimeEnd - minimumDuration);
+            refreshLabels();
+        } else if (v == endMinus) {
+            int end = quantize(currentTimeEnd - timeStep);
+
+            currentTimeEnd = Math.max(end, currentTimeStart + minimumDuration);
+            refreshLabels();
+        } else if (v == endPlus) {
+            int end = quantize(currentTimeEnd + timeStep);
+
+            currentTimeEnd = Math.min(end, maximumTime);
+            refreshLabels();
+        }
+    }
+
     protected void refreshButtonStates() {
         startMinus.setEnabled(currentTimeStart != minimumTime);
         startPlus.setEnabled(currentTimeStart < currentTimeEnd - minimumDuration);
@@ -88,6 +120,8 @@ public class CustomTimeSpanPicker2 extends FrameLayout implements OnClickListene
         startLabel.setText(String.format("%02d:%02d", currentTimeStart / 60, currentTimeStart % 60));
         endLabel.setText(String.format("%02d:%02d", currentTimeEnd / 60, currentTimeEnd % 60));
 
+        timeBar.setTimeLimits(new TimeSpan(getMinimumTime(), getMaximumTime()));
+        timeBar.setSpan(new TimeSpan(getStartTime(), getEndTime()));
 
         refreshButtonStates();
     }
