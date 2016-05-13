@@ -8,12 +8,12 @@
 
     <color name="CalendarDisabledColor">#4000</color>
     <color name="CalendarBorderColor">#ccc</color>
-    <color name="CalendarTextColor">#000</color>
+    <color name="CalendarTextColor">#000000</color>
     <color name="CalendarResTextColor">#fff</color>
     <color name="StatusFreeColor">#529200</color>
     <color name="StatusReservedColor">#b24c4c</color>
     <color name="Transparent">#0000</color>
-    <color name="CalendarMarkerReservedColor">#0066CC</color>
+    <color name="CalendarMarkerReservedColor">#0066cc</color>
     <color name="CalendarMarkerFreeColor">#0000</color>
 
     <style name="Theme.Transparent" parent="android:Theme">
@@ -25,7 +25,7 @@
         <item name="android:backgroundDimEnabled">true</item>
     </style>
 
-    <color name="TextColor">#000</color>
+    <color name="TextColor">#0091ea</color>
     <color name="TimeSpanTextColor">#529200</color>
 
     <style name="TimeSpanTimeStyle">
@@ -39,12 +39,12 @@
         <item name="android:textSize">64sp</item>
     </style>
 
-    <color name="FutuLightGreen">#cbdeb2</color>
-    <color name="ReserveBackground">#6698c655</color>
-    <color name="ReserveLine">#a4cb80</color>
+    <color name="FutuLightGreen">#64b5f6</color>
+    <color name="ReserveBackground">#8bc34a</color>
+    <color name="ReserveLine">#aed581</color>
     <color name="TimeBarTickColor">#3333</color>
-    <color name="ButtonTextNormal">#333</color>
-    <color name="ButtonTextActive">#333</color>
+    <color name="ButtonTextNormal">#ffffff</color>
+    <color name="ButtonTextActive">#ffffff</color>
     <color name="ButtonTextDisabled">#999</color>
     <color name="TextInfoColor">#666</color>
     <color name="CalendarWeekTextColor">#999</color>
@@ -61,4 +61,5 @@
     <color name="TrafficLightGreenButtonPressed">#03a021</color>
     <color name="TrafficLightYellowButtonPressedText">#e4ec8c</color>
     <color name="TrafficLightGreenButtonPressedText">#98dd6f</color>
+
 </resources>

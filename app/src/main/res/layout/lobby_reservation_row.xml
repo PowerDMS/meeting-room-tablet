@@ -36,7 +36,9 @@
                     android:layout_height="wrap_content"
                     android:text="Room name XXX"
                     android:textColor="@color/TextColor"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="normal|italic"
+                    android:textSize="20dp"></TextView>
+
 
                 <TextView
                     android:id="@+id/roomInfoLabel"
@@ -169,7 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/close_button_states"></ImageButton>
         </LinearLayout>

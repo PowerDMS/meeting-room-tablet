@@ -16,7 +16,7 @@ import java.util.Calendar;
 public class CustomTimeSpanPicker2 extends FrameLayout implements OnClickListener {
     View startMinus, startPlus, endMinus, endPlus;
     TextView startLabel, endLabel;
-    TimeBarView timeBar;
+    // TimeBarView timeBar;
     DateTime currentDay;
 
     int currentTimeStart;
@@ -57,7 +57,7 @@ public class CustomTimeSpanPicker2 extends FrameLayout implements OnClickListene
 
         startLabel = (TextView) findViewById(R.id.startTimeLabel);
         endLabel = (TextView) findViewById(R.id.endTimeLabel);
-        timeBar = (TimeBarView) findViewById(R.id.timeBarView);
+        // timeBar = (TimeBarView) findViewById(R.id.timeBarView);
 
         minimumDuration = 15; //minimun duration of meeting
         timeStep = 15; //time increments
@@ -82,7 +82,7 @@ public class CustomTimeSpanPicker2 extends FrameLayout implements OnClickListene
     @Override
     public void onClick(View v) {
         //start doing the animations
-        timeBar.enableAnimation();
+        // timeBar.enableAnimation();
 
         if (v == startMinus) {
             int start = quantize(currentTimeStart - timeStep);
@@ -120,8 +120,8 @@ public class CustomTimeSpanPicker2 extends FrameLayout implements OnClickListene
         startLabel.setText(String.format("%02d:%02d", currentTimeStart / 60, currentTimeStart % 60));
         endLabel.setText(String.format("%02d:%02d", currentTimeEnd / 60, currentTimeEnd % 60));
 
-        timeBar.setTimeLimits(new TimeSpan(getMinimumTime(), getMaximumTime()));
-        timeBar.setSpan(new TimeSpan(getStartTime(), getEndTime()));
+        // timeBar.setTimeLimits(new TimeSpan(getMinimumTime(), getMaximumTime()));
+        // timeBar.setSpan(new TimeSpan(getStartTime(), getEndTime()));
 
         refreshButtonStates();
     }
