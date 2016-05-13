@@ -2,8 +2,8 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:state_enabled="false"
-        android:drawable="@drawable/minus"/>
+        android:drawable="@drawable/minus_disabled"/>
     <item
         android:state_enabled="true"
-        android:drawable="@drawable/minus_disabled"/>
+        android:drawable="@drawable/minus"/>
 </selector>
