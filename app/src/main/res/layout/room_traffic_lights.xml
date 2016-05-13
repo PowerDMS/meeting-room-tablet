@@ -56,6 +56,17 @@
             android:textIsSelectable="false"/>
 
         <Button
+            android:id="@+id/endNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_now"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textIsSelectable="false"
+            android:layout_alignTop="@+id/bookNow"
+            android:layout_centerHorizontal="true" />
+
+        <Button
             android:id="@+id/bookNow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

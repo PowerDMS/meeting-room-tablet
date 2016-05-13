@@ -37,15 +37,19 @@ public class RoomTrafficLights extends RelativeLayout {
     TextView roomStatusInfoView;
     TextView reservationInfoView;
     Button bookNowView;
+    Button endNowView;
     View disconnected;
     Timer touchTimeoutTimer;
     boolean enabled = true;
     View.OnClickListener bookNowListener;
+    View.OnClickListener endNowListener;
     private long lastTouched = 0;
 
     public RoomTrafficLights(Context context) {
         this(context, null);
     }
+
+    //TODO Button visibility code
 
     public RoomTrafficLights(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -55,6 +59,7 @@ public class RoomTrafficLights extends RelativeLayout {
         roomStatusInfoView = (TextView) findViewById(R.id.roomStatusInfo);
         reservationInfoView = (TextView) findViewById(R.id.reservationInfo);
         bookNowView = (Button) findViewById(R.id.bookNow);
+        endNowView = (Button) findViewById(R.id.endNow);
         disconnected = findViewById(R.id.disconnected);
         updateConnected();
 
@@ -75,10 +80,16 @@ public class RoomTrafficLights extends RelativeLayout {
         this.bookNowListener = l;
     }
 
+        public void setEndNowListener(View.OnClickListener 1) {
+        this.endNowListener = 1;
+    }
+
     public void update(Room room) {
         updateConnected();
 
         roomTitleView.setText(room.getName());
+
+        //TODO Bookability status code
 
         if (room.isBookable(QUICK_BOOK_THRESHOLD)) {
             roomStatusView.setText("Free");
@@ -105,10 +116,14 @@ public class RoomTrafficLights extends RelativeLayout {
             reservationInfoView.setVisibility(GONE);
             roomStatusInfoView.setVisibility(VISIBLE);
             bookNowView.setVisibility(VISIBLE);
+            endNowView.setVisibility(GONE);
         } else {
             this.setBackgroundColor(getResources().getColor(R.color.TrafficLightReserved));
             roomStatusView.setText("Reserved");
+            bookNowView.setBackgroundDrawable(getResources().getDrawable(R.drawable.traffic_lights_button_red));
+            bookNowView.setTextColor(getResources().getColorStateList(R.color.traffic_lights_button_red));
             bookNowView.setVisibility(GONE);
+            endNowView.setVisibility(VISIBLE);
             setReservationInfo(room.getCurrentReservation(), room.getNextFreeSlot());
         }
     }

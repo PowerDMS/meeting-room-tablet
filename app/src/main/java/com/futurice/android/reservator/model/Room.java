@@ -47,6 +47,8 @@ public class Room implements Serializable {
         return name; // + " " + (isFree() ? "(free)" : "(reserved)");
     }
 
+    //TODO Boolean reservation code
+
     public boolean isFree() {
         DateTime now = new DateTime();
         for (Reservation r : reservations) {

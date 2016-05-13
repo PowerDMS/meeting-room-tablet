@@ -161,6 +161,8 @@ public class RoomActivity extends ReservatorActivity implements OnMenuItemClickL
             }
         });
 
+        //TODO Event booking code
+
         trafficLights.setBookNowListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
