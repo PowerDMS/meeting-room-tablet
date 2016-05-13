@@ -76,9 +76,9 @@ public class TimeBarView extends FrameLayout {
             animatorThread = new Thread() {
                 public void run() {
                     while (Math.abs(startDelta) > animStep || Math.abs(endDelta) > animStep) {
-                        // TimeBarView.this.span = new TimeSpan(
-                           // TimeBarView.this.span.getStart().add(Calendar.MILLISECOND, (int) Math.signum(startDelta) * animStep),
-                            //TimeBarView.this.span.getEnd().add(Calendar.MILLISECOND, (int) Math.signum(endDelta) * animStep));
+                        TimeBarView.this.span = new TimeSpan(
+                           TimeBarView.this.span.getStart().add(Calendar.MILLISECOND, (int) Math.signum(startDelta) * animStep),
+                            TimeBarView.this.span.getEnd().add(Calendar.MILLISECOND, (int) Math.signum(endDelta) * animStep));
 
                         startDelta -= Math.signum(startDelta) * animStep;
                         endDelta -= Math.signum(endDelta) * animStep;
@@ -89,7 +89,7 @@ public class TimeBarView extends FrameLayout {
                             e.printStackTrace();
                         }
                     }
-                    //TimeBarView.this.span = targetTimeSpan;
+                    TimeBarView.this.span = targetTimeSpan;
                     postInvalidate();
                     animatorThread = null;
                 }
